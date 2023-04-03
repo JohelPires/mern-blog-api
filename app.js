@@ -15,10 +15,10 @@ app.get('/', (req, res) => {
   res.json('hello')
 })
 
-app.post('/register', (req, res) => {
-  console.log(req.body)
-  res.json({ msg: 'registrando', user: req.body })
-})
+// app.post('/register', (req, res) => {
+//   console.log(req.body)
+//   res.json({ msg: 'registrando', user: req.body })
+// })
 
 const start = async () => {
   try {
