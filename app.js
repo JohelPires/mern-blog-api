@@ -6,7 +6,7 @@ const cors = require('cors')
 const connectDB = require('./db/connect')
 const authRoutes = require('./routes/authRoutes')
 
-app.use(cors())
+app.use(cors({ credentials: true, origin: 'http://localhost:3000' }))
 
 app.use(express.json())
 
